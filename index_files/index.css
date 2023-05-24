@@ -1,0 +1,62 @@
+/* @font-face {
+  src: url(/font/NeoDunggeunmoPro-Regular.ttf);
+  font-family: "neo";
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/5.9.0/css/font-awesome.min.css');
+
+body {
+  background: linear-gradient(#f03a44 0%, #000000 100%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1.5em;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  /* font-family: neo; */
+  font-family: 'Pangolin', cursive;
+}
+
+
+
+.gnb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px;
+  height: 400px;
+}
+
+.gnb:hover a {
+  opacity: 0.3;
+}
+
+.gnb a {
+  display: block;
+  font-size: 60px;
+  padding: 0;
+  margin: 30px 0;
+  transition: 0.5s;
+}
+
+.gnb a:hover {
+  opacity: 1;
+}
+
+.gnb a:before {
+  content: '\f105';
+  font-family: fontawesome;
+  margin-right: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.gnb a:hover:before {
+  opacity: 1;
+}
